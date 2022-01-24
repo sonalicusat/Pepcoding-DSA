@@ -31,3 +31,18 @@ Sample Output
 19
 23
 """
+
+low=int(input())
+high=int(input())
+#write your code here
+for i in range(low,high+1):
+    j = 2
+    count = 1
+    while j*j <= i:
+        if i%j == 0:
+            count= 0
+            break
+        j+=1
+    if count == 1:
+        print(i)
+    
