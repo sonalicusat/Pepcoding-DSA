@@ -32,3 +32,30 @@ Sample Output
 23
 */
 
+import java.util.*;
+
+public class Main{
+    public static void main(String[] args) {
+        // write your code here
+        Scanner scn = new Scanner(System.in);
+        int low = scn.nextInt();
+        int high = scn.nextInt();
+        
+        for (int i = low; i <= high; i++ ){
+            
+            if (i == 1 || i == 0)
+                continue;
+            int count = 1;
+            for (int j = 2; j*j <= i; j++){
+                
+                if (i%j == 0){
+                    count = 0;
+                    break;
+                }}
+            if (count !=0){
+                System.out.println(i);
+            }
+            
+        }
+    }
+}
